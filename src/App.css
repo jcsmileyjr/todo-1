@@ -2,7 +2,9 @@
 .App {
   display: grid;
   grid-template-columns: auto 50% auto;
+  grid-template-rows: auto auto;
   grid-template-areas: 
+    "header header header"
     "todoApp todoApp todoApp";
   background-color: rgb(252, 249, 249);
 }
@@ -16,6 +18,7 @@
 }
 
 header {
+  grid-area: header;
   border-bottom-style: solid;
   border-bottom-color: black;
   border-bottom-width: 1px;
@@ -29,7 +32,8 @@ header {
 /*Desktop screens*/
 @media only screen and (min-width: 1025px) {
   .App {
-    grid-template-areas: 
+    grid-template-areas:
+      "header header header"
       ". todoApp .";
   }
 }
