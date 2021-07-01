@@ -1,38 +1,26 @@
+
 .App {
-  text-align: center;
+  display: grid;
+  grid-template-columns: auto 50% auto;
+  grid-template-areas: 
+    "todoApp todoApp todoApp";
+  background-color: rgb(252, 249, 249);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+#content {
+  grid-area: todoApp;
+  background-color: lightcyan;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/*Tablet screens*/
+@media only screen and (min-width: 480px) {
+
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+/*Desktop screens*/
+@media only screen and (min-width: 1025px) {
+  .App {
+    grid-template-areas: 
+      ". todoApp .";
   }
 }
