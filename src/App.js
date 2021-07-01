@@ -5,7 +5,9 @@ function App() {
   return (
     <article className="App">
       <section id="content">
-        Hello world
+        <header>
+          <h1 className="header--title__style">To Do List</h1>
+        </header>
       </section>
     </article>
   );

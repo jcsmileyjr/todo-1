@@ -9,7 +9,16 @@
 
 #content {
   grid-area: todoApp;
-  background-color: lightcyan;
+}
+
+.header--title__style {
+  text-align: center;
+}
+
+header {
+  border-bottom-style: solid;
+  border-bottom-color: black;
+  border-bottom-width: 1px;
 }
 
 /*Tablet screens*/
