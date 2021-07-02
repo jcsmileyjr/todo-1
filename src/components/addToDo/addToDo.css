@@ -6,7 +6,7 @@
     grid-template-areas: 
         "addTo-label . ."
         "addTo-input addTo-input addTo-button";
-    margin: 5px;
+    margin: 5px 5px 20px 5px;
 }
 
 .addtodo__label--style {
@@ -37,6 +37,7 @@
 /*Non-mobile screens*/
 @media only screen and (min-width: 480px) {
     .addtodo__layout--style {
+        margin: 20px 0;
         grid-template-columns: 1fr 1fr 2fr;
         grid-template-areas:
             "addTo-label addTo-input addTo-button";

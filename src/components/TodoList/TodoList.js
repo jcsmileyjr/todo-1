@@ -2,7 +2,7 @@ import "./todoList.css";
 import TodoItem from "../todoItem/TodoItem";
 
 const TodoList = () => {
-    const listOfTodoItems = ["a", "b", "c"];
+    const listOfTodoItems = ["a", "b"];
     return(
         <article className="todoList__layout--style">
             {listOfTodoItems.map(todo =>(

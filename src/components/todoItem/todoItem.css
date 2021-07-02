@@ -1,0 +1,38 @@
+.todoItem__layout--style {
+  max-height: 50px;
+  display: flex;
+  justify-content: space-between;
+  background-color: lightgray;
+  padding: 10px;
+  margin-bottom: 1rem;
+}
+
+.todoItem__input--style {
+  width: 63%;
+}
+
+.todoItem__editButton--style {
+  min-width: 50px;
+  background-color: lightgray;
+  fill: red;
+  border: none;
+}
+
+.todoItem__editButton--style img {
+  max-height: 2rem;
+  background-color: white;
+  color: white;
+}
+
+.todoItem__deleteButton--style {
+  min-width: 50px;
+  background-color: lightgray;
+  border: none;
+}
+
+/*Non-mobile screens*/
+@media only screen and (min-width: 480px) {
+  .todoItem__input--style {
+    width: 75%;
+  }
+}
