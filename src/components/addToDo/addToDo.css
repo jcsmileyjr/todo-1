@@ -1,0 +1,46 @@
+
+.addtodo__layout--style {
+    display: grid;
+    grid-template-columns: 1f 1f 1f;
+    grid-template-rows: auto auto;
+    grid-template-areas: 
+        "addTo-label . ."
+        "addTo-input addTo-input addTo-button";
+    margin: 5px;
+}
+
+.addtodo__label--style {
+    grid-area: addTo-label;    
+    font-weight: 900;
+    color: grey;
+    letter-spacing: 1px;
+}
+
+.addtodo__input--style {
+    grid-area: addTo-input;   
+}
+
+
+.addtodo__button--container {
+    grid-area: addTo-button;
+    text-align: right;
+}
+
+.addtodo__button--style {
+    width: 5.5rem;
+    font-weight: 900;
+    color: grey;
+    background-color: white;
+    border: 1px solid grey;
+}
+
+/*Non-mobile screens*/
+@media only screen and (min-width: 480px) {
+    .addtodo__layout--style {
+        grid-template-columns: 1fr 1fr 2fr;
+        grid-template-areas:
+            "addTo-label addTo-input addTo-button";
+        
+        margin: 5px;
+    }
+} 

@@ -1,5 +1,5 @@
-
 import './App.css';
+import AddToDo from './components/addToDo/AddToDo';
 
 function App() {
   return (
@@ -7,8 +7,9 @@ function App() {
       <header>
         <h1 className="header--title__style">To Do List</h1>
       </header>
-      <section id="content">
-      </section>
+      <main id="content">
+        <AddToDo />
+      </main>
     </article>
   );
 }
