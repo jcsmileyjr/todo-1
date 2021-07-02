@@ -40,7 +40,5 @@
         grid-template-columns: 1fr 1fr 2fr;
         grid-template-areas:
             "addTo-label addTo-input addTo-button";
-        
-        margin: 5px;
     }
 } 
