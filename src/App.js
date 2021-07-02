@@ -22,6 +22,7 @@ function App() {
     const newTodoList = actionList
     newTodoList.push(newTask);
     setActionList(newTodoList);
+    setUserInput("");
   }
 
   return (
