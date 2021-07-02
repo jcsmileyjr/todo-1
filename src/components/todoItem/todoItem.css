@@ -2,18 +2,23 @@
   max-height: 50px;
   display: flex;
   justify-content: space-between;
-  background-color: lightgray;
+  background-color: rgb(231, 229, 229);
   padding: 10px;
   margin-bottom: 1rem;
 }
 
-.todoItem__input--style {
+.todoItem__label--style {
   width: 63%;
+  color: black;
+  font-weight: 600;
+  display:flex;
+  align-items: center;
+
 }
 
 .todoItem__editButton--style {
   min-width: 50px;
-  background-color: lightgray;
+  background-color: rgb(231, 229, 229);
   fill: red;
   border: none;
 }
@@ -26,13 +31,13 @@
 
 .todoItem__deleteButton--style {
   min-width: 50px;
-  background-color: lightgray;
+  background-color: rgb(231, 229, 229);
   border: none;
 }
 
 /*Non-mobile screens*/
 @media only screen and (min-width: 480px) {
-  .todoItem__input--style {
+  .todoItem__label--style {
     width: 75%;
   }
 }

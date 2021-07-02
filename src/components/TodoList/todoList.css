@@ -3,3 +3,10 @@
 .todoList__layout--style {
     margin: 5px;
 }
+
+/*Non-mobile screens*/
+@media only screen and (min-width: 480px) {
+    .todoList__layout--style {
+        margin: initial;
+    }
+  }
