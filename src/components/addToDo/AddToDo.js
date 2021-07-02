@@ -1,13 +1,13 @@
 import React from 'react';
 import "./addToDo.css";
 
-const AddToDo = () => {
+const AddToDo = (props) => {
     return(
         <section className="addtodo__layout--style">
             <label className="addtodo__label--style">Add an Item</label>
-            <input className="addtodo__input--style" type="text" />
+            <input onChange={props.newTask} value={props.value} className="addtodo__input--style" type="text" />
             <div className="addtodo__button--container">
-                <button className="addtodo__button--style">Add</button>
+                <button onClick={props.onSubmit} className="addtodo__button--style">Add</button>
             </div>
         </section>
     );
