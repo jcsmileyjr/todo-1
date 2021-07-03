@@ -7,6 +7,10 @@
   margin-bottom: 1rem;
 }
 
+.todoItem__layout--style:hover{
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+
 .todoItem__label--style {
   width: 63%;
   color: black;
