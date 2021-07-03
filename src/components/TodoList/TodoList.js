@@ -5,7 +5,7 @@ const TodoList = (props) => {
     return(
         <article className="todoList__layout--style">
             {props.todos.map(todo =>(
-                <TodoItem action={todo.action} complete={todo.done} todoId={todo.id} todoID={todo.id} completed={props.completed} removeTask={props.removeTask} key={todo.id} />
+                <TodoItem action={todo.action} editTodo={props.editTodo} complete={todo.done} todoId={todo.id} todoID={todo.id} completed={props.completed} removeTask={props.removeTask} key={todo.id} />
             ))}
         </article>
     );

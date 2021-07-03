@@ -13,6 +13,15 @@ function App() {
   const [userInput, setUserInput] = useState("");
   const [taskId, setTaskId] = useState(3);
 
+  const updateTodo = (id) => {
+    console.log(`Id: ${id}`)
+    let currentTodo = actionList.filter(function(todo){
+      return todo.id === id;
+    })
+    setUserInput(currentTodo[0].action);
+    deleteTodoItem(id);
+  }
+
   const completeTasks = (id) => {
     const tasks = actionList.map(todo => {
       if(todo.id === id){
@@ -51,7 +60,7 @@ function App() {
       </header>
       <main id="content">
         <AddToDo newTask={addUserInput} value={userInput} onSubmit={onSubmit} />
-        <TodoList todos={actionList} removeTask={deleteTodoItem} completed={completeTasks} />
+        <TodoList todos={actionList} editTodo={updateTodo} removeTask={deleteTodoItem} completed={completeTasks} />
       </main>
     </article>
   );

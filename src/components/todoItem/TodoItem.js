@@ -4,7 +4,7 @@ import SuperPen from '../../assets/feather.svg';
 const TodoItem = (props) => {
     return(
         <section className="todoItem__layout--style" key={props.todoID}>
-            <button className="todoItem__editButton--style">
+            <button onClick={()=> {props.editTodo(props.todoID)}} className="todoItem__editButton--style">
                 <img src={SuperPen} alt="" />
             </button>
             <label onClick={()=> {props.completed(props.todoID)}} className={`todoItem__label--style ${props.complete ? "strikethrough":""}`}>{props.action}</label>
