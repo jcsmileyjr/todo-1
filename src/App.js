@@ -11,7 +11,6 @@ function App() {
   const [taskId, setTaskId] = useState(3);
 
   const updateTodo = (id) => {
-    console.log(`Id: ${id}`)
     let currentTodo = actionList.filter(function(todo){
       return todo.id === id;
     })
@@ -53,10 +52,13 @@ function App() {
   }
 
   const deleteTodoItem = (id) => {
-    let remainingTasks = actionList.filter(function(todo, index, arr){
-      return todo.id !== id;
-    })
-    setActionList(remainingTasks)
+    setTimeout(()=> { 
+      let remainingTasks = actionList.filter(function(todo, index, arr){
+        return todo.id !== id;
+      })
+      setActionList(remainingTasks)
+    }, 500);
+
   }
 
   return (
