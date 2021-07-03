@@ -6,7 +6,7 @@
   grid-template-areas: 
     "header header header"
     "todoApp todoApp todoApp";
-  background-color: rgb(252, 249, 249);
+  background-color: #607D8B;
 }
 
 #content {
@@ -15,6 +15,7 @@
 
 .header--title__style {
   text-align: center;
+  color: #607D8B;
 }
 
 header {
@@ -22,6 +23,7 @@ header {
   border-bottom-style: solid;
   border-bottom-color: black;
   border-bottom-width: 1px;
+  background-color: white;
 }
 
 /*Tablet screens*/

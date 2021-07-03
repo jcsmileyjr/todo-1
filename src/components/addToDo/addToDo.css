@@ -12,7 +12,7 @@
 .addtodo__label--style {
     grid-area: addTo-label;    
     font-weight: 900;
-    color: grey;
+    color: white;
     letter-spacing: 1px;
 }
 
@@ -29,16 +29,16 @@
 .addtodo__button--style {
     width: 5.5rem;
     font-weight: 900;
-    color: grey;
+    color: #607D8B;
     background-color: white;
-    border: 1px solid grey;
+    border: none;
 }
 
 /*Non-mobile screens*/
-@media only screen and (min-width: 480px) {
+@media only screen and (min-width: 510px) {
     .addtodo__layout--style {
         margin: 20px 0;
-        grid-template-columns: 1fr 1fr 2fr;
+        grid-template-columns: 1fr 1.4fr 2fr;
         grid-template-areas:
             "addTo-label addTo-input addTo-button";
     }

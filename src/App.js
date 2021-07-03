@@ -4,12 +4,8 @@ import AddToDo from './components/addToDo/AddToDo';
 import TodoList from './components/TodoList/TodoList';
 
 function App() {
-  const listOfTodos = [
-    {action:"Do all those dirty stinky dishes these crazy kids have messsed up!", done:false, id:1},
-    {action:"Pay bills", done:true, id:2}
-  ]
 
-  const [actionList, setActionList] = useState(listOfTodos);
+  const [actionList, setActionList] = useState([]);
   const [userInput, setUserInput] = useState("");
   const [taskId, setTaskId] = useState(3);
 

@@ -2,7 +2,7 @@
   max-height: 50px;
   display: flex;
   justify-content: space-between;
-  background-color: rgb(231, 229, 229);
+  background-color: #E7F5FB;
   padding: 10px;
   margin-bottom: 1rem;
 }
@@ -21,8 +21,7 @@
 
 .todoItem__editButton--style {
   min-width: 50px;
-  background-color: rgb(231, 229, 229);
-  fill: red;
+  background-color: #E7F5FB;
   border: none;
 }
 
@@ -34,7 +33,7 @@
 
 .todoItem__deleteButton--style {
   min-width: 50px;
-  background-color: rgb(231, 229, 229);
+  background-color: #E7F5FB;
   border: none;
 }
 
