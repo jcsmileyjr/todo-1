@@ -63,7 +63,7 @@ function App() {
 
   return (
     <article className="App">
-      <header>
+      <header role="banner">
         <h1 className="header--title__style">To Do List</h1>
       </header>
       <main id="content">
