@@ -13,7 +13,10 @@
   font-weight: 600;
   display:flex;
   align-items: center;
+}
 
+.strikethrough {
+  text-decoration:line-through;
 }
 
 .todoItem__editButton--style {
