@@ -1,5 +1,6 @@
 import './App.css';
 import React, {useState} from 'react';
+import Swal from 'sweetalert2';
 import AddToDo from './components/addToDo/AddToDo';
 import TodoList from './components/TodoList/TodoList';
 
@@ -33,6 +34,15 @@ function App() {
   }
 
   const onSubmit = () => {
+    if(userInput === ""){
+      Swal.fire({
+        title:'Warning Alert',
+        text:"You forgot to write a task",
+        timer: 1500,
+        icon: 'warning'
+      });
+      return;
+    }
     const nextID = taskId;
     setTaskId(taskId + 1);
     const newTask = {action:userInput, done:false, id: nextID};
