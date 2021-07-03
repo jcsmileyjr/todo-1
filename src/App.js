@@ -11,18 +11,27 @@ function App() {
 
   const [actionList, setActionList] = useState(listOfTodos);
   const [userInput, setUserInput] = useState("");
+  const [taskId, setTaskId] = useState(3);
 
   const addUserInput = (e) => {
     setUserInput(e.target.value);
   }
 
   const onSubmit = () => {
-    const nextID = actionList.length + 1;
+    const nextID = taskId;
+    setTaskId(taskId + 1);
     const newTask = {action:userInput, done:false, id: nextID};
     const newTodoList = actionList
     newTodoList.push(newTask);
     setActionList(newTodoList);
     setUserInput("");
+  }
+
+  const deleteTodoItem = (id) => {
+    let remainingTasks = actionList.filter(function(todo, index, arr){
+      return todo.id !== id;
+    })
+    setActionList(remainingTasks)
   }
 
   return (
@@ -32,7 +41,7 @@ function App() {
       </header>
       <main id="content">
         <AddToDo newTask={addUserInput} value={userInput} onSubmit={onSubmit} />
-        <TodoList todos={actionList} />
+        <TodoList todos={actionList} removeTask={deleteTodoItem} />
       </main>
     </article>
   );
