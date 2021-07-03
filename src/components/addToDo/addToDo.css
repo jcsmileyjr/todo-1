@@ -29,9 +29,14 @@
 .addtodo__button--style {
     width: 5.5rem;
     font-weight: 900;
-    color: #607D8B;
+    color: #5B7A87;
     background-color: white;
     border: none;
+}
+
+.addtodo__button--style:hover {
+    background-color: #E7F5FB;
+    color:black;
 }
 
 /*Non-mobile screens*/

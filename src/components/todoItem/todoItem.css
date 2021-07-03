@@ -37,6 +37,10 @@
   border: none;
 }
 
+.todoItem__deleteButton--style:hover {
+  fill:red;
+}
+
 /*Non-mobile screens*/
 @media only screen and (min-width: 480px) {
   .todoItem__label--style {
