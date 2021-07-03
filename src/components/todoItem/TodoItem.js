@@ -11,7 +11,7 @@ const TodoItem = (props) => {
     return(
         <section className={`todoItem__layout--style ${ifDeleted ? "scale-out-horizontal":""}`} key={props.todoID}>
             <button onClick={()=> {props.editTodo(props.todoID)}} className="todoItem__editButton--style">
-                <img src={SuperPen} alt="" />
+                <img src={SuperPen} alt="A clickable feather pen to edit the todo item." />
             </button>
             <label onClick={()=> {props.completed(props.todoID)}} className={`todoItem__label--style ${props.complete ? "strikethrough":""}`}>{props.action}</label>
             <button className="todoItem__deleteButton--style" onClick={(e) => {props.removeTask(props.todoID); isDeleted()}}>
