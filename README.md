@@ -51,4 +51,4 @@ This is the first in a series of 8 front-end focus projects for the Front-end De
 
 **CSS:** A formatting language for styling web pages
 
-_Updated by JC Smiley in July of 2021_
+_Updated by [JC Smiley](https://www.linkedin.com/in/jcsmileyjr/) in July of 2021_
