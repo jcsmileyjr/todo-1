@@ -12,7 +12,7 @@
 4. Wireframes
 5. Technologies Used
 
-### Project Demo Link: [Flip a Card](https://jcsmiley-flip-a-card.netlify.app/)
+### Project Demo Link: [Front-end Developer Finishing Academy Todo app](https://frontend-developer-finishing-academy-todo.netlify.app/)
 
 ### Purpose:
 
@@ -32,9 +32,6 @@ This is the first in a series of 8 front-end focus projects for the Front-end De
 ![Wireframe of a tablet responsive design of the UI](src/assets/tablet-view.png)
 ![Wireframe of a desktop responsive design of the UI](src/assets/desktop-view.png)
 
-#### Trello
-![Screen-shot of Trello](src/assets/Flip-board-Tasks-2.PNG)
-
 ### This app was built with the following technologies:
 
 **React:** JavaScript front-end library for building user interfaces
@@ -51,4 +48,4 @@ This is the first in a series of 8 front-end focus projects for the Front-end De
 
 **CSS:** A formatting language for styling web pages
 
-_Updated by [JC Smiley](https://www.linkedin.com/in/jcsmileyjr/) in July of 2021_
+_Created by [JC Smiley](https://www.linkedin.com/in/jcsmileyjr/) in July of 2021_
